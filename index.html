@@ -5,9 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ALT School Web Development Training</title>
     <link rel="stylesheet" href="app.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+      }
+
+      nav {
+        background-color: #333;
+        padding: 10px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        color: #fff;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      li {
+        margin-right: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #007bff;
+      }
+
+      /* Media query for responsive design */
+      @media (max-width: 768px) {
+        ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        li {
+          margin: 10px 0;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h2>hello world</h2>
+    <nav>
+      <div class="container">
+        <a href="#" class="logo">Your Logo</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Your page content goes here -->
   </body>
-  <script src="/script.js"></script>
 </html>
