@@ -5,80 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ALT School Web Development Training</title>
     <link rel="stylesheet" href="app.css" />
-    <style>
-      body {
-        margin: 0;
-        font-family: "Arial", sans-serif;
-      }
-
-      nav {
-        background-color: #333;
-        padding: 10px;
-      }
-
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-
-      .logo {
-        color: #fff;
-        text-decoration: none;
-        font-size: 24px;
-        font-weight: bold;
-      }
-
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-      }
-
-      li {
-        margin-right: 20px;
-      }
-
-      a {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        transition: color 0.3s ease;
-      }
-
-      a:hover {
-        color: #007bff;
-      }
-
-      /* Media query for responsive design */
-      @media (max-width: 768px) {
-        ul {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        li {
-          margin: 10px 0;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="utilty.css" />
   </head>
   <body>
-    <nav>
-      <div class="container">
-        <a href="#" class="logo">Your Logo</a>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+    <nav class="w-full flex items-center justify-between">
+      <div class="logo">
+        <img src="/assets/logo.png" alt="Site Logo" />
+      </div>
+
+      <div class="nav-links-container w-full flex items-center justify-between">
+        <a href="#">Pricing</a>
+        <a href="#">Help</a>
+        <a href="#">Learn More</a>
+        <a href="#">Download</a>
+        <button class="nav-btn">Account</button>
+      </div>
+
+      <div class="harmburger">
+        <svg
+          id="harmburger"
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          class="font-bold"
+          height="35"
+          width="35"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path>
+        </svg>
       </div>
     </nav>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="#">Pricing</a>
+      <a href="#">Help</a>
+      <a href="#">Learn More</a>
+      <a href="#">Download</a>
+      <button class="nav-btn">Account</button>
+    </div>
 
-    <!-- Your page content goes here -->
+    <script src="/script.js"></script>
   </body>
 </html>
